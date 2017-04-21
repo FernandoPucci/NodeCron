@@ -2,20 +2,19 @@
 Learning about sheduling tasks over a NodeJS application
 
 ####Node-Cron Basic Configurations
- # ┌────────────── second (optional)
- # │ ┌──────────── minute
- # │ │ ┌────────── hour
- # │ │ │ ┌──────── day of month
- # │ │ │ │ ┌────── month
- # │ │ │ │ │ ┌──── day of week
- # │ │ │ │ │ │
- # │ │ │ │ │ │
- # *  * * * * *
+  ┌────────────── second (optional)
+  │ ┌──────────── minute
+  │ │ ┌────────── hour
+  │ │ │ ┌──────── day of month
+  │ │ │ │ ┌────── month
+  │ │ │ │ │ ┌──── day of week
+  │ │ │ │ │ │
+  │ │ │ │ │ │
+  * * * * * *
  
  
  **References:**
- *
-  NPM:*
+*NPM:* 
  ![Node-Cron NPM Package](https://www.npmjs.com/package/node-cron#allowed-values  "Node-Cron NPM Package")
  
 ![Github node-cron]( https://github.com/kelektiv/node-cron  "Github node-cron") 
