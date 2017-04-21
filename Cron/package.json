@@ -1,0 +1,29 @@
+{
+  "name": "cron",
+  "version": "1.0.0",
+  "description": "Learning about automatically scheduling tasks into an NodeJS Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoPucci/NodeCron.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Cron",
+    "Scheduling"
+  ],
+  "author": "FernandoPucci",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FernandoPucci/NodeCron/issues"
+  },
+  "homepage": "https://github.com/FernandoPucci/NodeCron#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "node-cron": "^1.1.3"
+  }
+}
