@@ -6,6 +6,8 @@ var cron = require('node-cron');
 var app = express();
 
 var PORT = 8000;
+var cronExpression = '*/10 * * * * *';
+var cronExpression2 = '* * * * *'; //every minute
 
 app.use(express.static(__dirname + '/app'));
 app.listen(PORT);
@@ -30,7 +32,7 @@ console.log(new Date().toLocaleString());
 
 ////FUNCTIONS
 var logFunction = function log() {
-    console.log("Function fired at: >>> " + new Date().toLocaleString());
+    return "Function fired at: >>> " + new Date().toLocaleString();
 };
 
 /// Node-Cron Instructions
@@ -47,7 +49,13 @@ var logFunction = function log() {
  # * * * * * *
  */
 ////NODE-CRON CONFIGURATIONS
-cron.schedule('*/10 * * * * *', function () {
-                                            logFunction();
-                                        }
-                                        ); //every second ended with '0'
+cron.schedule(cronExpression, function () {
+    console.log(logFunction());
+}
+); //every second ended with '0'
+
+//Multi Cron-Expressions
+cron.schedule(cronExpression2, function () {
+    console.log("\n## 2: " + logFunction() + "\n\n");
+}
+); //every second ended with '0'                                        
